@@ -4,7 +4,18 @@
   </head>
   <body>
       <a-scene>
-        
+        <a-assets>
+          <img id="sand" src="images/sand.png">
+          <img id="rock" src="images/rock.png">
+        </a-assets>
+
+        <a-sphere position="0 1 -2" radius="0.2" color="red"></a-sphere>
+
+        <a-cylinder color="crimson" position="-1 1 -2" height="3" radius="0.3"></a-cylinder>
+
+        <a-cone src="#rock" repeat="5 5" radius-bottom="0.4" position="1 1 -2" radius-top="0.1"></a-cone>
+
+        <a-plane src="#sand" repeat="150 150" color="#f7e98b" rotation="-90 0 0"  height="100" width="100"></a-plane>
       </a-scene>
   </body>
 </html>
